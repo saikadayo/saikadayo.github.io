@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>saika wagner</title>
+    <title>contact me</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,14 +35,24 @@
     </header>
     <main>
       <center>
-        <div class="about-me">
-          <img src="img/portrait.jpeg" class="profile__portrait" alt="portrait" align="left">
-          <div style="width: 375px;">
-            <h1>Hello / Ohayō〜</h1>
-            <p>My name is <span style="font-weight: 600; color: #2364d2;">Saika Wagner</span>, and I am a Full-stack Web Developer.</p>
-            <a href="work.html">Check out some of my codes</a>
-          </div>
+        <div class="contact-me">
+          <h1>Get in touch</h1>
+          If you would like to work together, let's connect and create something awesome!
+          <ul>
+            <li><a href="mailto:saikawagner@outlook.com">Email</a></li>
+            <li><a href="tel:+12695882362">Telephone</a></li>
+            <li><button onclick="window.location.href='mailto:saikawagner@outlook.com?subject=Connection Request'">Contact me</button></li>
+          </ul>
         </div>
+        <form class="contact-form" action="" method="post" id="contact-form">
+          <label class="standard-label" for="contact-email">Email: </label>
+          <input type="email" id="contact-email" required>
+          <label class="standard-label" for="contact-telephone">Telephone: </label>
+          <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+          <label class="standard-label" for="contact-message">Message: </label>
+          <textarea id="contact-message" required maxlength="240"></textarea>
+          <input class="button" type="submit" value="Send message">
+        </form>
       </center>
     </main>
     <footer class="flex-footer">
