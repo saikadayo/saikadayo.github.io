@@ -1,0 +1,6 @@
+Linters:
+HTMLHint
+Stylelint
+
+Issues fixed:
+HTML Lang was missing
