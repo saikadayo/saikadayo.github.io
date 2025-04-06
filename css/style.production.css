@@ -11,7 +11,7 @@ h1 - 0461cf
   flex-direction: column;
   min-height: 100vh;
   background: #fff;
-  font-family: "Onest", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 13px;
@@ -20,17 +20,19 @@ h1 - 0461cf
 }
 
 h1 {
-  font-size: 24px;
-  color: #0461cf;
+  font-size: 48px;
+  font-weight: 600;
+  color: #ceb88e;
 }
 
 h2 {
   font-size: 22px;
   color: #0461cf;
+  text-transform: lowercase;
 }
 
 a {
-  color: #0d395e;
+  color: #5b88b2;
 }
 
 a:hover {
@@ -176,8 +178,9 @@ button:focus,
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 10px;
-  background: #ebf5fe;
+  padding: 15px 50px;
+  border-top: 25px solid #efeef1;
+  background: #ffffff;
 }
 
 .flex-item {
@@ -203,15 +206,14 @@ button:focus,
 }
 
 .flex-item li a {
-  color: #0d395e;
-  font-weight: 500;
-  margin: 10px;
+  color: #22489e;
+  margin: 15px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .flex-item li a:hover {
-  color: #0461cf;
+  color: #5b88b2;
 }
 
 .flex-item img {
@@ -245,8 +247,8 @@ section {
 }
 
 .about-me h1 {
-  font-size: 32px;
-  font-weight: 900;
+  font-size: 48px;
+  font-weight: 600;
 }
 
 /* start grid fallback */
@@ -338,12 +340,12 @@ section {
 
 .about-me a {
   position: relative;
-  color: #0461cf;
+  color: #5b88b2;
   text-decoration: none;
 }
 
 .about-me a:hover {
-  color: #0461cf;
+  color: #5b88b2;
 }
 
 .about-me a::before {
@@ -354,13 +356,18 @@ section {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #0461cf;
+  background-color: #D6CDC5;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 
 .about-me a:hover::before {
   transform: scaleX(1);
+}
+
+.about-me img {
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .contact-me {
